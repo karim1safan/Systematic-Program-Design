@@ -1,0 +1,28 @@
+;; The first three lines of this file were inserted by DrRacket. They record metadata
+;; about the language level of this file in a form that our tools can easily process.
+#reader(lib "htdp-beginner-reader.ss" "lang")((modname Interval) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp")) #f)))
+;; Design a data definition to represent a seat number in a row, where each
+;; row has 32 seats. (just the seat number, not the row number)
+
+;;NOTES: [] brackets mean inclusive at that end of the interval
+;;       () brackets mean exclusive
+;;       Natural is integer starting at 0, n
+;;       Number includes all real numbers include fractions 1.3, 1.2, ... etc
+;;       Natural [1, 32) doesn't include 32
+
+;; HtDD Recipe
+
+;; setNum is Natural[1, 32]
+;; interp. seat numbers in a row, 1 and 32 aisle seats
+
+(define C1  1)  ; start
+(define c2 12)  ; middle
+(define c3 32)  ; end
+
+#;
+(define (fn-for-seat-num sn)
+  (... sn))
+
+;; Template rules use
+;; - atomic non-distinct: Natural
+
